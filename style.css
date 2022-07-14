@@ -1,0 +1,76 @@
+/* codigo para remover setas no input 
+Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, label {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+
+input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+}
+
+.header {
+    background: lightsteelblue;
+    margin-top: 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+.forms {
+    margin: 0 25%;
+}
+
+.container {
+    padding: 1rem;
+    margin-top: 3rem;
+    background: lightsteelblue;
+}
+
+.form {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.form:last-child {
+    float: right;
+}
+
+.btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.resultado {
+    border: 0;
+    border-bottom: 2px solid;
+    border-radius: 0;
+    width: 220px;
+    text-align: center;
+}

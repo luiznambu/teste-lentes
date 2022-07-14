@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Teste de lente</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Disponibilidade de Lente</h1>
+
+    </header>
+    <div class="forms">
+        <form class="grau-esferico container">
+            <h2>Grau esférico</h2>
+            <div class="esfericos form">
+                <label for="esfEsq">Olho esquerdo</label>
+                <input type="number" placeholder="Insira um valor" id="esfEsq" autocomplete="off">
+            </div>
+            <div class="esfericos form">
+                <label for="esfDir">Olho direito</label>
+                <input type="number" placeholder="Insira um valor" id="esfDir" autocomplete="off">
+            </div>
+        </form>
+        <form class="grau-cilindrico container">
+            <h2>Grau cilíndrico</h2>
+            <div class="form">
+                <label for="cilEsq">Olho esquerdo</label>
+                <input type="number" placeholder="Insira um valor" id="cilEsq" autocomplete="off">
+            </div>
+            <div class="form">
+                <label for="cilDir">Olho direito</label>
+                <input type="number" placeholder="Insira um valor" id="cilDir" autocomplete="off">
+            </div>
+        </form>
+        <input type="button" class="btn" value="Ver resultados" onclick="submitForms()" />
+        <div>
+            <div class="form">
+                <p id="res-esquerdo" class="resultado" autocomplete="off" readonly>Olho esquerdo</p>
+            </div>
+            <div class="form">
+                <p id="res-direito" class="resultado" autocomplete="off" readonly>Olho direito</p>
+            </div>
+        </div>
+    </div>
+
+    
+<script src="app.js"></script>
+</body>
+</html>
